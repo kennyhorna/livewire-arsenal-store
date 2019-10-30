@@ -2,19 +2,19 @@
 
 @section('content')
     {{-- PRODUCTOS --}}
-    <div class="w-3/4 bg-white rounded-lg p-4 m-2 shadow-lg">
+    <div class="w-3/4 bg-white rounded-lg p-4 pb-8 m-2 shadow-lg">
         {{-- CABECERA --}}
-        <h3 class="font-semibold text-3xl">🤘&#127996; Livewire Store</h3>
+        <h3 class="font-semibold text-3xl">🤘&#127996; Arsenal Store</h3>
         <div class="h-px w-full bg-purple-500 my-2 rounded-full"></div>
 
-        <div class="flex flex-grow -mx-2 px-2">
+        <div class="flex flex-wrap -mx-2 px-2">
             {{-- PRODUCTO --}}
             <div class="w-1/2 px-2">
                 <div class="mx-1">
                     <h2 class="font-semibold text-purple-50 px-2 pt-3 pb-2 text-xl">
                         Producto Sexy #01
                     </h2>
-                    <img class="w-full rounded" src="https://picsum.photos/id/{{random_int(1, 100)}}/400/275"
+                    <img class="w-full rounded" src="{{ url('storage/images/producto-01.png') }}"
                          alt="Arsenal Home Kit">
                     <p class="px-2 py-3">
                         Esta es la descripción del producto. Solo necesitas saber que es de buena calidad y que deberías de comprarlo.
@@ -37,7 +37,7 @@
                     <h2 class="font-semibold text-purple-50 px-2 pt-3 pb-2 text-xl">
                         Producto Sexy #02
                     </h2>
-                    <img class="w-full rounded" src="https://picsum.photos/id/{{random_int(1, 100)}}/400/275"
+                    <img class="w-full rounded" src="{{ url('storage/images/producto-02.png') }}"
                          alt="Arsenal Home Kit">
                     <p class="px-2 py-3">
                         Esta es la descripción del producto. Solo necesitas saber que es de buena calidad y que deberías de comprarlo.
@@ -48,8 +48,54 @@
                         <div class="font-bold text-lg text-purple-800 px-2 pt-1 pb-3">
                             S/ 250
                         </div>
-                        <div class="cursor-pointer rounded py-1 px-2 bg-purple-500 text-white">
-                            Añadir al carrito
+                        <div class="cursor-pointer rounded py-1 px-2  bg-purple-200">
+                            Eliminar del carrito
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/2 px-2">
+                <div class="mx-1">
+                    <h2 class="font-semibold text-purple-50 px-2 pt-3 pb-2 text-xl">
+                        Producto Sexy #03
+                    </h2>
+                    <img class="w-full rounded" src="{{ url('storage/images/producto-03.png') }}"
+                         alt="Arsenal Home Kit">
+                    <p class="px-2 py-3">
+                        Esta es la descripción del producto. Solo necesitas saber que es de buena calidad y que deberías de comprarlo.
+                    </p>
+                    {{-- CONTROLES --}}
+                    <div class="flex flex-col items-start">
+                        {{-- PRECIO --}}
+                        <div class="font-bold text-lg text-purple-800 px-2 pt-1 pb-3">
+                            S/ 250
+                        </div>
+                        <div class="cursor-pointer rounded py-1 px-2  bg-purple-200">
+                            Eliminar del carrito
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/2 px-2">
+                <div class="mx-1">
+                    <h2 class="font-semibold text-purple-50 px-2 pt-3 pb-2 text-xl">
+                        Producto Sexy #04
+                    </h2>
+                    <img class="w-full rounded" src="{{ url('storage/images/producto-04.png') }}"
+                         alt="Arsenal Home Kit">
+                    <p class="px-2 py-3">
+                        Esta es la descripción del producto. Solo necesitas saber que es de buena calidad y que deberías de comprarlo.
+                    </p>
+                    {{-- CONTROLES --}}
+                    <div class="flex flex-col items-start">
+                        {{-- PRECIO --}}
+                        <div class="font-bold text-lg text-purple-800 px-2 pt-1 pb-3">
+                            S/ 250
+                        </div>
+                        <div class="cursor-pointer rounded py-1 px-2  bg-purple-200">
+                            Eliminar del carrito
                         </div>
                     </div>
                 </div>
@@ -68,7 +114,7 @@
             <span class="font-semibold text-purple-50 px-2 pb-1 text-lg">
                 Producto Sexy #01
             </span>
-            <img clasS="w-full rounded" src="https://picsum.photos/id/{{random_int(1, 100)}}/220/150"
+            <img clasS="w-full rounded" src="{{ url('storage/images/producto-01.png') }}"
                  alt="Arsenal Home Kit">
             {{-- CONTROLES --}}
             <div class="flex flex-row p-2 justify-between">
